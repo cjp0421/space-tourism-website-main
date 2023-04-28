@@ -1,3 +1,17 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bellefair&display=swap');
+
+/* ============= */
+/* Custom properties /* 
+/* ============= */
+
+:root {
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
 /* ============= */
 /* CSS Reset /* 
 /* ============= */
@@ -98,9 +112,44 @@ select {
     border: 0;
   }
 
-  /* Practice, set-up CSS */
 
-  .box {
-      background-color: lightblue;
-      padding: 3rem;
+  /* Custom Colors */
+
+  .bg-dark {
+      background-color: hsl(var(--clr-dark) );
+  }
+  .bg-light {
+      background-color: hsl(var(--clr-light) );
+  }
+  .bg-white {
+      background-color: hsl(var(--clr-white) );
+  }
+  .text-dark {
+      color:hsl(var(--clr-dark) )
+  }
+  .text-light {
+      color: hsl(var(--clr-light) );
+  }
+  .text-white {
+      color:hsl(var(--clr-white) );
+  }
+
+  .example-component{
+      background-color: hsl(var(--clr-light) / .2);
+  }
+
+  /* Color Box Styles */
+  .color-box-styles{
+      width: 100%;
+      padding: 3rem 1rem 1rem 1rem;
+      border: .5px solid hsl(var(--clr-light) / .5);
+      font-family: 'Bellefair', serif;
+  }
+
+  .color-box-grid {
+      grid-template-columns: 33% 33% 33%;
+  }
+
+  .accent-font {
+    font-family: 'Barlow', sans-serif;
   }
