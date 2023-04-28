@@ -69,3 +69,38 @@ select {
 /* Utility Classes /* 
 /* ============= */
 
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+/* accessibility utility class for screen-readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+
+  /* Practice, set-up CSS */
+
+  .box {
+      background-color: lightblue;
+      padding: 3rem;
+  }
