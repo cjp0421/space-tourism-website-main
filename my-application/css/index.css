@@ -1,0 +1,71 @@
+/* ============= */
+/* CSS Reset /* 
+/* ============= */
+
+
+/* commonly used reset that this is based on:  https://piccalil.li/blog/a-modern-css-reset/*/
+
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins, padding */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p, figure, picture {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up the body */
+
+body {
+    line-height: 1.5;
+    min-height: 100 vh;
+}
+
+/* Making images easier to work with  */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Making form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Removing animations for people who've turned them off */
+/* This is an accessibility measure. */
+
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+/* ============= */
+/* Utility Classes /* 
+/* ============= */
+
